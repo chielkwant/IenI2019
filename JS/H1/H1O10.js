@@ -1,3 +1,5 @@
+var diameter = 10;
+
 function setup() {
   canvas = createCanvas(450,450);
   canvas.parent('processing');
@@ -8,9 +10,11 @@ function setup() {
 }
 
 function draw() {
-  background('lavender');
-  fill('black');
+  background('pink');
+  fill('purple');
   text("mouseX:" + round(mouseX) + " mouseY:"+round(mouseY),10,20);
-  fill('indianred');
-  ellipse(width/2,height/2,10);
+  fill('green');
+  ellipse(mouseX, mouseY, diameter);
+diameter +=1;
 }
+
