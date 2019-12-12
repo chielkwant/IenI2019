@@ -20,7 +20,7 @@ function draw() {
 
   push();
   noStroke();
-  fill('indianred');
+  fill('purple');
   ellipse(0,0,150);
   fill('slategray');
   ellipse(-20,-30,50);
@@ -32,7 +32,7 @@ function draw() {
   ellipse(0,10,50);
   stroke('slategray');
   strokeWeight(10);
-  fill('white');
+  fill('black');
   arc(0, 40, 80, 40, 0, PI, CHORD);
   pop();
   xJOS--;

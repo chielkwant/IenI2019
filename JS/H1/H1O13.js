@@ -14,29 +14,29 @@ function draw() {
   text("xJOS: " + round(xJOS) + " (mouseX:" + round(mouseX) + ")",10,20);
   text("yJOS: " + round(yJOS) + " (mouseY:" + round(mouseY) + ")",260,20);
   
-  xJOS = constrain(mouseX,100,450);
-  
+  xJOS = constrain(mouseX,37.5,412.5);
+  yJOS = constrain(mouseY,37.5,412.5);
   scale(1);
-  translate(xJOS,225);
+  translate(xJOS,yJOS);
 
   // in de volgende regels wordt JOS getekend
 
   push();
   noStroke();
   fill('indianred');
-  ellipse(0,0,150);
+  ellipse(0,0,75);
   fill('slategray');
-  ellipse(-20,-30,50);
-  ellipse(20,-30,50);
+  ellipse(-10,-15,25);
+  ellipse(10,-15,25);
   fill('white');
-  ellipse(-20,-25,20,40);
-  ellipse(20,-25,20,40);
+  ellipse(-10,-12.5,10,20);
+  ellipse(10,-12.5,10,20);
   fill('orange');
-  ellipse(0,10,50);
+  ellipse(0,5,25);
   stroke('slategray');
-  strokeWeight(10);
+  strokeWeight(5);
   fill('white');
-  arc(0, 40, 80, 40, 0, PI, CHORD);
+  arc(0, 20, 40, 20, 0, PI, CHORD);
   pop();
   // einde tekenen JOS
   
